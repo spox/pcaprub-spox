@@ -1,0 +1,17 @@
+== pcaprub-spox ==
+
+This is a hacked version of pcaprub to
+work on Ruby 1.9. You can find the original
+here:
+
+http://www.metasploit.com/svn/framework3/trunk/external/pcaprub
+
+Depending on your distro, make sure the dev
+packages are installed for libpcap. Install
+is easy enough:
+
+git clone git://github.com/spox/pcaprub-spox
+cd pcaprub-spox
+ruby extconf.rb
+make
+make install
