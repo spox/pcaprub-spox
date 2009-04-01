@@ -6,5 +6,7 @@ spec = Gem::Specification.new do |s|
     s.summary           = %q(Ruby Pcap lib)
     s.platform          = Gem::Platform::RUBY
     s.has_rdoc          = false
-    s.extensions << 'extconf.rb'
+    s.required_ruby_version = '>= 1.9.1'
+    s.extensions = ['extconf.rb']
+    s.files             = Dir['**/*']
 end
